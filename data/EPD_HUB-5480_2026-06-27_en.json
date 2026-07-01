@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Tandy Concrete",
+      "product_name": "ATILTS4020100Enhanced",
+      "manufacturing_location": "21 Mackay Slade Point Road, Mackay, Australia",
+      "compressive_strength_mpa": 40,
+      "gwp_total": {
+        "A1": 259,
+        "A2": 17.7,
+        "A3": 3.39,
+        "A1_A3": 280,
+        "A4": 2.85,
+        "A5": 16.6,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": 4.58,
+        "C2": 13,
+        "C3": 7.38,
+        "C4": 4.51,
+        "D": -13.5
+      }
+    }
+  ]
+}

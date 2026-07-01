@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Tandy Concrete",
+      "product_name": "AN3220100Enhanced",
+      "manufacturing_location": "21 Mackay Slade Point Road, Mackay, Australia",
+      "compressive_strength_mpa": 32,
+      "gwp_total": {
+        "A1": 213,
+        "A2": 15.9,
+        "A3": 3.31,
+        "A1_A3": 232,
+        "A4": 2.79,
+        "A5": 15.1,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": 4.48,
+        "C2": 12.7,
+        "C3": 7.2,
+        "C4": 4.41,
+        "D": -13.2
+      }
+    }
+  ]
+}

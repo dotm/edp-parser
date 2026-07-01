@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Boral Limited",
+      "product_name": "Envirocrete® 40% 32MPa",
+      "manufacturing_location": "Melbourne South-East",
+      "compressive_strength_mpa": 32,
+      "gwp_total": {
+        "A1": 255,
+        "A2": 13.8,
+        "A3": 5.97,
+        "A1_A3": 275,
+        "A4": null,
+        "A5": null,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": 4.23,
+        "C2": 12,
+        "C3": 6.82,
+        "C4": 4.17,
+        "D": -12.2
+      }
+    }
+  ]
+}

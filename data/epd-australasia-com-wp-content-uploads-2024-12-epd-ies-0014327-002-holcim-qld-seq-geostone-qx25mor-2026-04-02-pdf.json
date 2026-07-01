@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Holcim (Australia) Pty Ltd",
+      "product_name": "QLD - SEQ - GEOStone - QX25MOR - S25 MORETON GEOSTONE - Decorative",
+      "manufacturing_location": "Brisbane City, Acacia Ridge, Beaudesert, Beenleigh, Boonah, Cleveland, Geebung, Narangba, Wacol, Murarrie, Beerwah, Caloundra, Gympie, Caboolture, Noosa, Kawana, Southport, Tweed Heads, Burleigh Heads, Coomera, Raceview, Jacobs Well, Brendale, Darra, Nanango, Murgon, Toowoomba, Warwick",
+      "compressive_strength_mpa": 25,
+      "gwp_total": {
+        "A1": null,
+        "A2": null,
+        "A3": null,
+        "A1_A3": 237,
+        "A4": 2.63,
+        "A5": 15.6,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": 0.522,
+        "C2": 4.39,
+        "C3": 10.5,
+        "C4": 0,
+        "D": -18.8
+      }
+    }
+  ]
+}

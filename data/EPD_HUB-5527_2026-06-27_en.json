@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Tandy Concrete",
+      "product_name": "CTILTS4020100Enhanced",
+      "manufacturing_location": "11 McIntosh Drive, Airlie Beach, Australia",
+      "compressive_strength_mpa": 40,
+      "gwp_total": {
+        "A1": 254,
+        "A2": 26.3,
+        "A3": 4.07,
+        "A1_A3": 284,
+        "A4": 2.19,
+        "A5": 16.7,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": 4.54,
+        "C2": 12.9,
+        "C3": 7.31,
+        "C4": 4.47,
+        "D": -13.4
+      }
+    }
+  ]
+}

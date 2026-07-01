@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Holcim (Australia) Pty Ltd",
+      "product_name": "VIC - Melbourne Metro - ECOPact- VE322EAMF",
+      "manufacturing_location": "VIC - Melbourne Metro (Production sites: Laverton; Truganina; Footscray; Epping; Keilor; Preston; Oaklands Junction; Melbourne Airport; Bayswater; Springvale; Lyndhurst; Seaford; Pakenham; Hastings; Rosebud)",
+      "compressive_strength_mpa": 32,
+      "gwp_total": {
+        "A1": null,
+        "A2": null,
+        "A3": null,
+        "A1_A3": 105,
+        "A4": 2.05,
+        "A5": 8.81,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": 0.532,
+        "C2": 3.99,
+        "C3": 7.61,
+        "C4": 1.28,
+        "D": -15.7
+      }
+    }
+  ]
+}

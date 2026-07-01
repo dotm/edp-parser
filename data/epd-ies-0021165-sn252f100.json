@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "manufacturer": "Adbri Limited",
+      "product_name": "Futurecrete Normal Class GL-Slag 25 MPa (mix code SN252F100)",
+      "manufacturing_location": "South Australia",
+      "compressive_strength_mpa": 25,
+      "gwp_total": {
+        "A1": null,
+        "A2": null,
+        "A3": null,
+        "A1_A3": null,
+        "A4": 9.64,
+        "A5": null,
+        "B1": null,
+        "B2": null,
+        "B3": null,
+        "B4": null,
+        "B5": null,
+        "B6": null,
+        "B7": null,
+        "C1": null,
+        "C2": null,
+        "C3": null,
+        "C4": null,
+        "D": null
+      }
+    }
+  ]
+}
