@@ -4,13 +4,14 @@ import type { Product } from "@/types/edp";
 
 type ProductListDetailProps = {
   product: Product;
-  onAddToComparedProductList: () => void;
+  isCompared: boolean;
+  onToggleComparedProduct: () => void;
 };
 
 const formatValue = (value: string | number | null | undefined) =>
   value === null || value === undefined || value === "" ? "-" : value;
 
-export default function ProductListDetail({ product, onAddToComparedProductList }: ProductListDetailProps) {
+export default function ProductListDetail({ product, isCompared, onToggleComparedProduct }: ProductListDetailProps) {
   const gwpStages = Object.entries(product.gwp_total).filter(
     ([, value]) => value !== null
   );
@@ -57,10 +58,14 @@ export default function ProductListDetail({ product, onAddToComparedProductList 
         <div className="flex items-start justify-end sm:justify-center">
           <button
             type="button"
-            className="rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200"
-            onClick={onAddToComparedProductList}
+            className={`rounded-full px-4 py-2 text-sm font-semibold text-white transition dark:text-zinc-950 cursor-pointer ${
+              isCompared
+                ? "bg-rose-600 hover:bg-rose-500 dark:bg-rose-400 dark:hover:bg-rose-300"
+                : "bg-slate-950 hover:bg-slate-800 dark:bg-zinc-50 dark:hover:bg-zinc-200"
+            }`}
+            onClick={onToggleComparedProduct}
           >
-            Compare
+            {isCompared ? "Remove" : "Compare"}
           </button>
         </div>
       </div>

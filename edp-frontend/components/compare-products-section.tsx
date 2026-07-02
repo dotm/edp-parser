@@ -144,7 +144,7 @@ export default function CompareProductsSection({
               <button
                 type="button"
                 onClick={() => product.id && onRemoveFromComparedProductList(product.id)}
-                className="rounded-full bg-slate-950 px-3 py-2 text-xs font-semibold text-white transition hover:bg-slate-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200"
+                className="rounded-full px-3 py-2 text-xs font-semibold text-white transition dark:text-zinc-950 bg-rose-600 hover:bg-rose-500 dark:bg-rose-400 dark:hover:bg-rose-300 cursor-pointer"
               >
                 Remove
               </button>

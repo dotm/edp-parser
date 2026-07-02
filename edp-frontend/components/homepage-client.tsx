@@ -28,11 +28,25 @@ export default function HomePageClient({ initialProducts }: HomePageClientProps)
   const [compressiveStrengthStartRange, setCompressiveStrengthStartRange] = useState("");
   const [compressiveStrengthEndRange, setCompressiveStrengthEndRange] = useState("");
 
-  const addToComparedProductList = (product: Product) => {
+  const comparedProductSet = useMemo(
+    () =>
+      new Set(
+        comparedProductList
+          .map((product) => product.id)
+          .filter((id): id is string => Boolean(id))
+      ),
+    [comparedProductList]
+  );
+
+  const toggleComparedProduct = (product: Product) => {
     if (!product.id) return;
-    setComparedProductList((current) =>
-      current.some((item) => item.id === product.id) ? current : [...current, product]
-    );
+
+    setComparedProductList((current) => {
+      const isAlreadyCompared = current.some((item) => item.id === product.id);
+      return isAlreadyCompared
+        ? current.filter((item) => item.id !== product.id)
+        : [...current, product];
+    });
   };
 
   const removeFromComparedProductList = (productId: string) => {
@@ -120,7 +134,11 @@ export default function HomePageClient({ initialProducts }: HomePageClientProps)
           onCompressiveStrengthEndRangeChange={setCompressiveStrengthEndRange}
         />
 
-        <ProductList products={filteredProducts} onAddToComparedProductList={addToComparedProductList} />
+        <ProductList
+          products={filteredProducts}
+          comparedProductSet={comparedProductSet}
+          onToggleComparedProduct={toggleComparedProduct}
+        />
       </div>
     </div>
   );

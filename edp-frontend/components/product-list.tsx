@@ -5,10 +5,11 @@ import ProductListDetail from "./product-list-detail";
 
 type ProductListProps = {
   products: Product[];
-  onAddToComparedProductList: (product: Product) => void;
+  comparedProductSet: Set<string>;
+  onToggleComparedProduct: (product: Product) => void;
 };
 
-export default function ProductList({ products, onAddToComparedProductList }: ProductListProps) {
+export default function ProductList({ products, comparedProductSet, onToggleComparedProduct }: ProductListProps) {
   if (products.length === 0) {
     return (
       <section className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
@@ -23,7 +24,12 @@ export default function ProductList({ products, onAddToComparedProductList }: Pr
       <h2 className="text-xl font-semibold">Product List ({products.length})</h2>
       <div className="mt-6 space-y-6">
         {products.map((product) => (
-          <ProductListDetail key={product.id} product={product} onAddToComparedProductList={() => onAddToComparedProductList(product)} />
+          <ProductListDetail
+            key={product.id}
+            product={product}
+            isCompared={Boolean(product.id && comparedProductSet.has(product.id))}
+            onToggleComparedProduct={() => onToggleComparedProduct(product)}
+          />
         ))}
       </div>
     </section>
